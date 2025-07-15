@@ -11,7 +11,7 @@ import Companies from "./pages/Companies";
 import Career from "./pages/Career";
 import Team from "./pages/Team";
 import NotFound from "./pages/NotFound";
-
+// hii
 const queryClient = new QueryClient();
 
 const App = () => (
