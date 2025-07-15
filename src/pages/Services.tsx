@@ -1,8 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import Footer from '@/components/Footer';
 import { 
   Heart, 
@@ -306,8 +305,7 @@ const Services = () => {
           </div>
         </div>
       </section>
-      <Analytics />     
-      <SpeedInsights />  
+ 
       {/* Footer */}
       <Footer />
     </div>
