@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Footer from '@/components/Footer';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { 
   Heart, 
   Car, 
@@ -304,6 +305,7 @@ const Services = () => {
           </div>
         </div>
       </section>
+      <SpeedInsights/>
       {/* Footer */}
       <Footer />
     </div>
