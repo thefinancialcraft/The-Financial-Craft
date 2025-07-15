@@ -9,7 +9,7 @@ const Navbar = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Home', path: '/' },
+    { name: 'Home', path: '/home' },
     { name: 'Companies', path: '/companies' },
     { name: 'Services', path: '/services' },
     { name: 'About', path: '/about' },
