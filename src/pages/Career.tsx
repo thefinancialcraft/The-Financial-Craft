@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Footer from '@/components/Footer';
+import { Helmet } from "react-helmet";
 import { 
   Briefcase, 
   MapPin, 
@@ -17,6 +18,9 @@ import {
 } from 'lucide-react';
 
 const Career = () => {
+   <Helmet>
+        <link rel="canonical" href="https://www.thefinancialcraft.com/about" />
+      </Helmet>
   const openings = [
     {
       title: 'Proccess Head',

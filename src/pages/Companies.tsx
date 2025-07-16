@@ -11,9 +11,13 @@ import sbiLogo from '@/assets/sbi-logo.jpg';
 import licLogo from '@/assets/LIC-Logo.jpg';  
 import careLogo from '@/assets/care_health_insurance_logo.svg';
 import Footer from '@/components/Footer';
+import { Helmet } from "react-helmet";
 
 
 const Companies = () => {
+  <Helmet>
+        <link rel="canonical" href="https://www.thefinancialcraft.com/companies" />
+      </Helmet>
   const companies = [
     {
       id: 'niva',

@@ -1,7 +1,13 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const NotFound = () => {
+  <Helmet>
+    <meta name="description" content="The page you are looking for does not exist." />
+    <link rel="canonical" href="https://www.thefinancialcraft.com/404" />
+  </Helmet>;
+  
   const location = useLocation();
 
   useEffect(() => {

@@ -29,8 +29,12 @@ import {
   Heart,
   Star
 } from 'lucide-react';
+import { Helmet } from "react-helmet";
 
 const Team = () => {
+  <Helmet>
+    <link rel="canonical" href="https://www.thefinancialcraft.com/team" />
+  </Helmet>
   // Founder Card Data
   const founder = {
     name: 'Ajay Kumar',

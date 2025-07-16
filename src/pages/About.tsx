@@ -1,6 +1,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Footer from '@/components/Footer';
+import { Helmet } from "react-helmet";
 import { 
   Shield, 
   Users, 
@@ -13,6 +14,9 @@ import {
 } from 'lucide-react';
 
 const About = () => {
+   <Helmet>
+        <link rel="canonical" href="https://www.thefinancialcraft.com/about" />
+      </Helmet>
   const stats = [
     { number: '50,000+', label: 'Happy Customers', icon: Users },
     { number: '₹500Cr+', label: 'Claims Settled', icon: Shield },

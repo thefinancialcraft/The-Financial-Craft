@@ -6,11 +6,15 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import TaxBenefitsSection from '@/components/TaxBenefitsSection';
 import Footer from '@/components/Footer';
 import { Analytics } from "@vercel/analytics/react"
+import { Helmet } from "react-helmet";
 
 
 import { useEffect, useState } from 'react';
 
 const Index = () => {
+   <Helmet>
+        <link rel="canonical" href="https://www.thefinancialcraft.com/" />
+      </Helmet>
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {

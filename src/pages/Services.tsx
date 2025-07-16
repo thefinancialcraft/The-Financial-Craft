@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Footer from '@/components/Footer';
+import { Helmet } from "react-helmet";
 import { 
   Heart, 
   Car, 
@@ -16,6 +17,9 @@ import {
 } from 'lucide-react';
 
 const Services = () => {
+  <Helmet>
+    <link rel="canonical" href="https://www.thefinancialcraft.com/services" />
+  </Helmet>
   const insuranceTypes = [
     {
       icon: Heart,
