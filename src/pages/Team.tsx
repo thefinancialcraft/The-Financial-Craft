@@ -32,9 +32,7 @@ import {
 import { Helmet } from "react-helmet";
 
 const Team = () => {
-  <Helmet>
-    <link rel="canonical" href="https://www.thefinancialcraft.com/team" />
-  </Helmet>
+  
   // Founder Card Data
   const founder = {
     name: 'Ajay Kumar',
@@ -282,6 +280,25 @@ const Team = () => {
 
   return (
     <div className="min-h-screen">
+       <Helmet>
+        <title>Meet Our Insurance Experts | The Financial Craft Team</title>
+        <meta name="description" content="Our team of experienced insurance analysts, advisors, and tech professionals is dedicated to helping you choose the right insurance plan confidently." />
+        <meta name="keywords" content="insurance experts India, health insurance advisors, insurance team India" />
+
+        <meta property="og:title" content="Meet Our Insurance Experts | The Financial Craft Team" />
+        <meta property="og:description" content="Meet the professionals helping families across India make smarter insurance choices." />
+        <meta property="og:url" content="https://www.thefinancialcraft.com/team" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Meet Our Insurance Experts | The Financial Craft Team" />
+        <meta name="twitter:description" content="Get to know the brains behind India’s most trusted insurance comparison portal." />
+        <meta name="twitter:image" content="/src/assets/tfc-logo.png" />
+
+        <link rel="canonical" href="https://www.thefinancialcraft.com/team" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="py-20 gradient-subtle">
         <div className="container mx-auto px-6">

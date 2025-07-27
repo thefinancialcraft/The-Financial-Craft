@@ -14,9 +14,7 @@ import {
 } from 'lucide-react';
 
 const About = () => {
-   <Helmet>
-        <link rel="canonical" href="https://www.thefinancialcraft.com/about" />
-      </Helmet>
+   
   const stats = [
     { number: '50,000+', label: 'Happy Customers', icon: Users },
     { number: '₹500Cr+', label: 'Claims Settled', icon: Shield },
@@ -49,6 +47,25 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
+       <Helmet>
+        <title>About The Financial Craft | Empowering Insurance Decisions</title>
+        <meta name="description" content="Learn more about The Financial Craft, our mission to make insurance simpler, and how we help you compare the best health insurance companies in India." />
+        <meta name="keywords" content="about best insurance comparison platform, insurance experts India, our mission insurance" />
+
+        <meta property="og:title" content="About The Financial Craft | Empowering Insurance Decisions" />
+        <meta property="og:description" content="Who we are and how we’re making insurance simpler for families and individuals in India." />
+        <meta property="og:url" content="https://www.thefinancialcraft.com/about" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About The Financial Craft | Empowering Insurance Decisions" />
+        <meta name="twitter:description" content="Meet the people and purpose behind India's most user-friendly insurance comparison platform." />
+        <meta name="twitter:image" content="/src/assets/tfc-logo.png" />
+
+        <link rel="canonical" href="https://www.thefinancialcraft.com/about" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="py-20 gradient-subtle">
         <div className="container mx-auto px-6">

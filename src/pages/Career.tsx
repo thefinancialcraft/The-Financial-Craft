@@ -18,9 +18,7 @@ import {
 } from 'lucide-react';
 
 const Career = () => {
-   <Helmet>
-        <link rel="canonical" href="https://www.thefinancialcraft.com/about" />
-      </Helmet>
+ 
   const openings = [
     {
       title: 'Proccess Head',
@@ -113,6 +111,24 @@ const Career = () => {
 
   return (
     <div className="min-h-screen">
+       <Helmet>
+        <title>Join The Financial Craft | Careers in Health Insurance Innovation</title>
+        <meta name="description" content="Want to shape the future of insurance in India? Join our team at The Financial Craft and work on cutting-edge comparison tools and customer experience." />
+        <meta name="keywords" content="insurance career India, join health insurance startup, careers in insurance comparison" />
+
+        <meta property="og:title" content="Join The Financial Craft | Careers in Health Insurance Innovation" />
+        <meta property="og:description" content="Be part of the team that's redefining insurance in India. Apply now to join The Financial Craft!" />
+        <meta property="og:url" content="https://www.thefinancialcraft.com/careers" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Join The Financial Craft | Careers in Health Insurance Innovation" />
+        <meta name="twitter:description" content="Help us build the future of health insurance guidance in India. Explore open roles." />
+        <meta name="twitter:image" content="/src/assets/tfc-logo.png" />
+
+        <link rel="canonical" href="https://www.thefinancialcraft.com/careers" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       {/* Hero Section */}
       <section className="py-20 gradient-subtle">
         <div className="container mx-auto px-6">

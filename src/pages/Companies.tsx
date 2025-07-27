@@ -15,9 +15,7 @@ import { Helmet } from "react-helmet";
 
 
 const Companies = () => {
-  <Helmet>
-        <link rel="canonical" href="https://www.thefinancialcraft.com/companies" />
-      </Helmet>
+  
   const companies = [
     {
       id: 'niva',
@@ -146,6 +144,35 @@ const Companies = () => {
 
   return (
     <div className="min-h-screen">
+       
+      {/* ✅ SEO Helmet Tags for Companies Page */}
+      <Helmet>
+        <title>Top Health Insurance Companies in India | Compare Providers</title>
+        <meta name="description" content="Explore India’s leading health insurance providers with detailed features, premium benefits, and claim ratios. Make an informed choice with The Financial Craft." />
+        <meta name="keywords" content="top insurance providers India, trusted health insurance companies, insurance comparison India, best insurance companies India" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Top Health Insurance Companies in India | Compare Providers" />
+        <meta property="og:description" content="Explore top-rated health insurance providers in India with The Financial Craft. Find policy features, benefits, and compare them side-by-side." />
+        <meta property="og:image" content="/favicon.jpeg" />
+        <meta property="og:url" content="https://www.thefinancialcraft.com/companies" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="The Financial Craft" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Top Health Insurance Companies in India | Compare Providers" />
+        <meta name="twitter:description" content="Explore India’s leading insurance providers with policy comparison, benefits, and expert insights at The Financial Craft." />
+        <meta name="twitter:image" content="/src/assets/tfc-logo.png" />
+        <meta name="twitter:site" content="@thefinancialcraft" />
+        <meta name="twitter:creator" content="@thefinancialcraft" />
+        <meta name="twitter:domain" content="thefinancialcraft.com" />
+
+        {/* Canonical */}
+        <link rel="canonical" href="https://www.thefinancialcraft.com/companies" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="py-20 gradient-subtle">
         <div className="container mx-auto px-6">

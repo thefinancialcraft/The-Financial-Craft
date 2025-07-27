@@ -17,9 +17,7 @@ import {
 } from 'lucide-react';
 
 const Services = () => {
-  <Helmet>
-    <link rel="canonical" href="https://www.thefinancialcraft.com/services" />
-  </Helmet>
+ 
   const insuranceTypes = [
     {
       icon: Heart,
@@ -133,6 +131,25 @@ const Services = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Insurance Plan Comparison & Advisory Services | The Financial Craft</title>
+        <meta name="description" content="We help you find the best insurance company for your needs—whether it's family, individual, or critical illness coverage. Discover our services today." />
+        <meta name="keywords" content="insurance plan comparison services, health insurance advisory, best insurance services in India" />
+
+        <meta property="og:title" content="Insurance Plan Comparison & Advisory Services | The Financial Craft" />
+        <meta property="og:description" content="Expert insurance services and comparison tools tailored to your health, life, or family needs in India." />
+        <meta property="og:url" content="https://www.thefinancialcraft.com/services" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Insurance Plan Comparison & Advisory Services | The Financial Craft" />
+        <meta name="twitter:description" content="We simplify insurance decisions with expert comparison services for every need." />
+        <meta name="twitter:image" content="/src/assets/tfc-logo.png" />
+
+        <link rel="canonical" href="https://www.thefinancialcraft.com/services" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="py-20 gradient-subtle">
         <div className="container mx-auto px-6">
