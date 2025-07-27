@@ -1,106 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset 
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
-  http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Homepage -->
+  <!-- ✅ Home Page -->
+  <!-- Title: The Financial Craft – Compare Your Best Plan Here -->
   <url>
     <loc>https://www.thefinancialcraft.com/</loc>
-    <lastmod>2025-07-22</lastmod>
+    <lastmod>2025-07-27</lastmod>
     <changefreq>daily</changefreq>
-    <priority>1.00</priority>
+    <priority>1.0</priority>
   </url>
 
-  <!-- Companies -->
+  <!-- ✅ Companies Page -->
+  <!-- Title: Top Health Insurance Companies in India | Compare Providers -->
   <url>
     <loc>https://www.thefinancialcraft.com/companies</loc>
-    <lastmod>2025-07-22</lastmod>
+    <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.9</priority>
   </url>
 
-  <!-- Services -->
+  <!-- ✅ Services Page -->
+  <!-- Title: Insurance Plan Comparison & Advisory Services | The Financial Craft -->
   <url>
     <loc>https://www.thefinancialcraft.com/services</loc>
-    <lastmod>2025-07-22</lastmod>
+    <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.8</priority>
   </url>
 
-  <!-- About -->
+  <!-- ✅ About Page -->
+  <!-- Title: About The Financial Craft | Empowering Insurance Decisions -->
   <url>
     <loc>https://www.thefinancialcraft.com/about</loc>
-    <lastmod>2025-07-22</lastmod>
+    <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.6</priority>
   </url>
 
-  <!-- Team -->
+  <!-- ✅ Team Page -->
+  <!-- Title: Meet Our Insurance Experts | The Financial Craft Team -->
   <url>
     <loc>https://www.thefinancialcraft.com/team</loc>
-    <lastmod>2025-07-22</lastmod>
+    <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.5</priority>
   </url>
 
-  <!-- Career -->
+  <!-- ✅ Careers Page -->
+  <!-- Title: Join The Financial Craft | Careers in Health Insurance Innovation -->
   <url>
-    <loc>https://www.thefinancialcraft.com/career</loc>
-    <lastmod>2025-07-22</lastmod>
+    <loc>https://www.thefinancialcraft.com/careers</loc>
+    <lastmod>2025-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.5</priority>
   </url>
-
-  <!-- Contact -->
-  <url>
-    <loc>https://www.thefinancialcraft.com/contact</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-
-  </url>
-  <!-- Blog -->
-  <url>
-    <loc>https://www.thefinancialcraft.com/blog</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-
-  <!-- Privacy Policy -->
-  <url> 
-    <loc>https://www.thefinancialcraft.com/privacy-policy</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-  </url>
-
-  <!-- Terms of Service -->
-  <url>
-    <loc>https://www.thefinancialcraft.com/terms-of-service</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-  </url>
-
-  <!-- Sitemap -->
-  <url>
-    <loc>https://www.thefinancialcraft.com/sitemap.xml</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.50</priority>
-  </url>
-
-  <!-- Additional URLs can be added here -->
-  <!-- Example: -->
-  <!-- <url>
-    <loc>https://www.thefinancialcraft.com/example-page</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.50</priority> 
-  </url> -->
-
 
 </urlset>
