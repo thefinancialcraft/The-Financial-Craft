@@ -6,7 +6,7 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import TaxBenefitsSection from '@/components/TaxBenefitsSection';
 import Footer from '@/components/Footer';
 import { Analytics } from "@vercel/analytics/react"
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet-async';
 
 
 import { useEffect, useState } from 'react';
