@@ -51,33 +51,40 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4 min-w-[210px] justify-end flex-shrink-0 md:absolute md:right-6 md:top-1/2 md:-translate-y-1/2">
-            <Button variant="outline" size="sm" className="group relative overflow-hidden">
-              <span className="flex items-center w-[18px] group-hover:w-[132px] transition-all duration-200 overflow-hidden">
-                <Phone className="w-4 h-4 transition-all duration-200 animate-phone-icon group-hover:animate-none group-hover:scale-100" />
-      {/* Phone icon animation keyframes */}
-      <style>{`
-        @keyframes phoneIcon {
-          0%, 100% { transform: scale(1) rotate(-5deg); }
-          10% { transform: scale(1.05) rotate(5deg); }
-          20% { transform: scale(1.1) rotate(-5deg); }
-          30% { transform: scale(1.1) rotate(5deg); }
-          40% { transform: scale(1.05) rotate(-5deg); }
-          50% { transform: scale(1.05) rotate(5deg); }
-          60% { transform: scale(1) rotate(-5deg); }
-          100% { transform: scale(1) rotate(-5deg); }
-        }
-        .animate-phone-icon {
-          animation: phoneIcon 1.2s infinite;
-        }
-      `}</style>
-                <span
-                  className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
-                  style={{ pointerEvents: 'none', display: 'inline-block' }}
-                >
-                  +91 8882558932
-                </span>
-              </span>
-            </Button>
+          <Button
+  variant="outline"
+  size="sm"
+  className="group relative overflow-hidden bg-transparent border border-[#4e577e] text-[#4e577e] hover:bg-transparent hover:border-[#4e577e] hover:text-[#4e577e] transition-all duration-200"
+>
+  <span className="flex items-center w-[18px] group-hover:w-[132px] transition-all duration-200 overflow-hidden">
+    <Phone className="w-4 h-4 transition-all duration-200 animate-phone-icon group-hover:animate-none group-hover:scale-100" />
+
+    {/* Phone icon animation keyframes */}
+    <style>{`
+      @keyframes phoneIcon {
+        0%, 100% { transform: scale(1) rotate(-5deg); }
+        10% { transform: scale(1.05) rotate(5deg); }
+        20% { transform: scale(1.1) rotate(-5deg); }
+        30% { transform: scale(1.1) rotate(5deg); }
+        40% { transform: scale(1.05) rotate(-5deg); }
+        50% { transform: scale(1.05) rotate(5deg); }
+        60% { transform: scale(1) rotate(-5deg); }
+        100% { transform: scale(1) rotate(-5deg); }
+      }
+      .animate-phone-icon {
+        animation: phoneIcon 1.2s infinite;
+      }
+    `}</style>
+
+    <span
+      className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
+      style={{ pointerEvents: 'none', display: 'inline-block' }}
+    >
+      +91 8882558932
+    </span>
+  </span>
+</Button>
+
             <Button
   size="sm"
   className="pl-5 pr-5 gradient-primary hidden min-[1115px]:inline-block"
@@ -86,14 +93,13 @@ const Navbar = () => {
 </Button>
 
             {/* PoSP */}
-             <Button  size="sm" className="group relative overflow-hidden pl-5 pr-5 bg-gradient-to-br group-hover:opacity-10 transition-opacity duration-500 from-pink-400 to-purple-500">
+             <Button  size="sm" className="group relative overflow-hidden pl-5 pr-4 bg-gradient-to-br group-hover:opacity-10 transition-opacity duration-500 from-pink-400 to-purple-500">
               <span className="flex items-center  w-[32px] group-hover:w-[80px] transition-all duration-200 overflow-hidden">
               <p>PoSP</p>
                 <span
-                  className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
+                  className="ml-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
                   style={{ pointerEvents: 'none', display: 'inline-block' }}
-                >
-                  Agent
+                >Agent
                 </span>
               </span>
             </Button>
