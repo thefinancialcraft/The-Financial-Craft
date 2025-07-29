@@ -23,7 +23,7 @@ const HeroSection = () => {
   );
 
   return (
-    <section className="relative min-h-[120vh] flex items-center justify-center overflow-hidden gradient-subtle">
+    <section className="relative  flex items-center justify-center overflow-hidden gradient-subtle">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <FloatingElement delay={0} className="absolute top-20 left-10">
