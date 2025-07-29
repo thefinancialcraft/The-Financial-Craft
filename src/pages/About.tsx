@@ -74,14 +74,14 @@ const About = () => {
   <meta property="og:title" content="About The Financial Craft | Founded by Ajay Kumar" />
   <meta property="og:description" content="India's trusted insurance comparison platform. Learn about our journey, vision, and how we’re transforming the insurance industry with transparency and technology." />
   <meta property="og:url" content="https://www.thefinancialcraft.com/about" />
-  <meta property="og:image" content="https://www.thefinancialcraft.com/assets/og-about.jpg" />
+  <meta property="og:image" content="https://www.thefinancialcraft.com/assets/public/favicon-32x32.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@thefinancialcraft" />
   <meta name="twitter:title" content="About Us | The Financial Craft by Ajay Kumar" />
   <meta name="twitter:description" content="Founded in 2021, The Financial Craft helps you compare insurance plans. Learn who we are and why our team is passionate about financial literacy." />
-  <meta name="twitter:image" content="https://www.thefinancialcraft.com/assets/og-about.jpg" />
-
+  <meta name="twitter:image" content="https://www.thefinancialcraft.com/assets/public/favicon-32x32.png"  />
+  
   <link rel="alternate" href="https://www.thefinancialcraft.com/" hrefLang="en" />
   <link rel="alternate" href="https://www.thefinancialcraft.com/companies" hrefLang="en" />
   <link rel="alternate" href="https://www.thefinancialcraft.com/services" hrefLang="en" />
@@ -90,7 +90,7 @@ const About = () => {
   <link rel="alternate" href="https://www.thefinancialcraft.com/careers" hrefLang="en" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/favicon.ico" />
+   <link rel="icon" href="/public/favicon.ico" />
 </Helmet>
 
 

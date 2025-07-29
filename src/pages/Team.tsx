@@ -308,13 +308,13 @@ const Team = () => {
   <meta property="og:title" content="The Financial Craft Team | Know Our Experts" />
   <meta property="og:description" content="Get to know the team behind The Financial Craft. Meet the people making insurance simpler, smarter, and more transparent for India." />
   <meta property="og:url" content="https://www.thefinancialcraft.com/team" />
-  <meta property="og:image" content="https://www.thefinancialcraft.com/assets/og-team.jpg" />
+  <meta property="og:image" content="https://www.thefinancialcraft.com/assets/public/favicon-32x32.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@thefinancialcraft" />
   <meta name="twitter:title" content="Meet The Financial Craft Team" />
   <meta name="twitter:description" content="Our experts are here to help you make smarter insurance decisions. Meet our mission-driven team of advisors and product leaders." />
-  <meta name="twitter:image" content="https://www.thefinancialcraft.com/assets/og-team.jpg" />
+  <meta name="twitter:image" content="https://www.thefinancialcraft.com/assets/public/favicon-32x32.png"  />
 
   <link rel="alternate" href="https://www.thefinancialcraft.com/" hrefLang="en" />
   <link rel="alternate" href="https://www.thefinancialcraft.com/companies" hrefLang="en" />
@@ -324,7 +324,7 @@ const Team = () => {
   <link rel="alternate" href="https://www.thefinancialcraft.com/careers" hrefLang="en" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/favicon.ico" />
+   <link rel="icon" href="/public/favicon.ico" />
 </Helmet>
 
 

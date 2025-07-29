@@ -158,13 +158,13 @@ const Services = () => {
   <meta property="og:title" content="Explore Insurance Services | The Financial Craft" />
   <meta property="og:description" content="Compare and buy health, life, and term insurance plans online. Get policy quotes and expert guidance with The Financial Craft’s insurance service hub." />
   <meta property="og:url" content="https://www.thefinancialcraft.com/services" />
-  <meta property="og:image" content="https://www.thefinancialcraft.com/assets/og-services.jpg" />
+  <meta property="og:image" content="https://www.thefinancialcraft.com/assets/public/favicon-32x32.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@thefinancialcraft" />
   <meta name="twitter:title" content="Insurance Services in India | The Financial Craft" />
   <meta name="twitter:description" content="Compare insurance services from India’s top insurers. Health, life, term, and motor plans with premium tools and expert help." />
-  <meta name="twitter:image" content="https://www.thefinancialcraft.com/assets/og-services.jpg" />
+  <meta name="twitter:image" content="https://www.thefinancialcraft.com/assets/public/favicon-32x32.png"  />
 
   <link rel="alternate" href="https://www.thefinancialcraft.com/" hrefLang="en" />
   <link rel="alternate" href="https://www.thefinancialcraft.com/companies" hrefLang="en" />
@@ -174,7 +174,7 @@ const Services = () => {
   <link rel="alternate" href="https://www.thefinancialcraft.com/careers" hrefLang="en" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/favicon.ico" />
+   <link rel="icon" href="/public/favicon.ico" />
 </Helmet>
 
 

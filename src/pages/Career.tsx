@@ -139,13 +139,14 @@ const Career = () => {
   <meta property="og:title" content="Join The Financial Craft | Careers Page" />
   <meta property="og:description" content="Explore exciting roles in product, marketing, customer success & more. Join our mission to simplify insurance for millions across India." />
   <meta property="og:url" content="https://www.thefinancialcraft.com/careers" />
-  <meta property="og:image" content="https://www.thefinancialcraft.com/assets/og-careers.jpg" />
+    <meta property="og:image" content="https://www.thefinancialcraft.com/assets/public/favicon-32x32.png" />
+
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@thefinancialcraft" />
   <meta name="twitter:title" content="Careers | The Financial Craft" />
   <meta name="twitter:description" content="Join our team of professionals simplifying insurance in India. Great culture, flexible roles, and impactful work await." />
-  <meta name="twitter:image" content="https://www.thefinancialcraft.com/assets/og-careers.jpg" />
+ <meta name="twitter:image" content="https://www.thefinancialcraft.com/assets/public/favicon-32x32.png"  />
 
   <link rel="alternate" href="https://www.thefinancialcraft.com/" hrefLang="en" />
   <link rel="alternate" href="https://www.thefinancialcraft.com/companies" hrefLang="en" />
@@ -155,7 +156,7 @@ const Career = () => {
   <link rel="alternate" href="https://www.thefinancialcraft.com/careers" hrefLang="en" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/favicon.ico" />
+   <link rel="icon" href="/public/favicon.ico" />
 </Helmet>
 
 

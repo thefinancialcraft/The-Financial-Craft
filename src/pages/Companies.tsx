@@ -173,13 +173,13 @@ const Companies = () => {
   <meta property="og:title" content="Top Insurance Companies in India | The Financial Craft" />
   <meta property="og:description" content="Explore top insurers like Care Health, Niva Bupa & Star Health. Compare features, prices & claim support to make smarter insurance choices." />
   <meta property="og:url" content="https://www.thefinancialcraft.com/companies" />
-  <meta property="og:image" content="https://www.thefinancialcraft.com/assets/og-companies.jpg" />
+  <meta property="og:image" content="https://www.thefinancialcraft.com/assets/public/favicon-32x32.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@thefinancialcraft" />
   <meta name="twitter:title" content="Compare Insurance Companies in India | The Financial Craft" />
   <meta name="twitter:description" content="Compare top insurance companies in India. Trusted ratings, real reviews, and detailed policy info – all in one place." />
-  <meta name="twitter:image" content="https://www.thefinancialcraft.com/assets/og-companies.jpg" />
+  <meta name="twitter:image" content="https://www.thefinancialcraft.com/assets/public/favicon-32x32.png"  />
 
   <link rel="alternate" href="https://www.thefinancialcraft.com/" hrefLang="en" />
   <link rel="alternate" href="https://www.thefinancialcraft.com/companies" hrefLang="en" />
@@ -189,7 +189,7 @@ const Companies = () => {
   <link rel="alternate" href="https://www.thefinancialcraft.com/careers" hrefLang="en" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" href="/public/favicon.ico" />
 </Helmet>
 
 

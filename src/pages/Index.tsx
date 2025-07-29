@@ -71,7 +71,7 @@ const Index = () => {
     content="Compare Health, Life, Motor & Term Insurance Plans Online. Get Expert Help, Free Quotes & Instant Policy from India's Top Insurers like Care, Niva Bupa, ICICI & More."
   />
   <meta property="og:url" content="https://www.thefinancialcraft.com/" />
-  <meta property="og:image" content="https://www.thefinancialcraft.com/assets/og-home.jpg" />
+  <meta property="og:image" content="https://www.thefinancialcraft.com/assets/public/favicon-32x32.png" />
 
   {/* ✅ Twitter Card */}
   <meta name="twitter:card" content="summary_large_image" />
@@ -84,7 +84,7 @@ const Index = () => {
     name="twitter:description"
     content="Get instant quotes and buy insurance policies online from India's top companies. Trusted help with term, health, motor, and investment insurance."
   />
-  <meta name="twitter:image" content="https://www.thefinancialcraft.com/assets/og-home.jpg" />
+  <meta name="twitter:image" content="https://www.thefinancialcraft.com/assets/public/favicon-32x32.png"  />
 
   {/* ✅ Alternate Links for Crawling */}
   <link rel="alternate" href="https://www.thefinancialcraft.com/" hrefLang="en" />
@@ -96,7 +96,7 @@ const Index = () => {
 
   {/* ✅ Mobile & Favicon */}
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/favicon.ico" />
+   <link rel="icon" href="/public/favicon.ico" />
 </Helmet>
 
 
