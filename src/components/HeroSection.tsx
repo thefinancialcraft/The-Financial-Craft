@@ -29,7 +29,7 @@ const HeroSection = () => {
         <FloatingElement delay={0} className="absolute top-20 left-10">
           <div className="w-16 h-16 rounded-full bg-primary/10 animate-pulse-slow" />
         </FloatingElement>
-        <FloatingElement delay={1} className="absolute top-40 right-20">
+        <FloatingElement delay={1} className="absolute bottom-10 right-20">
           <div className="w-12 h-12 rounded-full bg-secondary/10 animate-bounce-gentle" />
         </FloatingElement>
         <FloatingElement delay={2} className="absolute bottom-32 left-20">
@@ -50,7 +50,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div style={{ marginTop: '-70px' }} className="container mx-auto px-6 relative z-10">
+      <div style={{ marginTop: '50px', marginBottom:"150px" }} className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className={`space-y-8 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
@@ -107,7 +107,29 @@ const HeroSection = () => {
           <div className={`relative ${isVisible ? 'animate-fade-in-scale' : 'opacity-0'}`}>
             <div className="relative space-y-6">
               {/* Feature Cards */}
+
+    {/* Central Interactive Element */}
+              <FloatingElement className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl p-8 shadow-strong hover-lift">
+                <div className="text-center space-y-4">
+                  <div className="text-6xl font-bold text-gradient">₹10,000+</div>
+                  <div className="text-lg font-medium">Average Savings Per Family</div>
+                  <div className="text-sm text-muted-foreground">Compare & Save with Smart Choices</div>
+                  <div className="flex justify-center space-x-4 pt-4">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                      <span className="text-xs">Live Comparison</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+                      <span className="text-xs">Real-time Quotes</span>
+                    </div>
+                  </div>
+                </div>
+              </FloatingElement>
+
               <div className="grid grid-cols-2 gap-4">
+
+                
                 <FloatingElement className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 shadow-medium hover-lift">
                   <div className="text-center space-y-3">
                     <div className="w-12 h-12 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
@@ -149,24 +171,7 @@ const HeroSection = () => {
                 </FloatingElement>
               </div>
 
-              {/* Central Interactive Element */}
-              <FloatingElement delay={0.8} className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl p-8 shadow-strong hover-lift">
-                <div className="text-center space-y-4">
-                  <div className="text-6xl font-bold text-gradient">₹10,000+</div>
-                  <div className="text-lg font-medium">Average Savings Per Family</div>
-                  <div className="text-sm text-muted-foreground">Compare & Save with Smart Choices</div>
-                  <div className="flex justify-center space-x-4 pt-4">
-                    <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-                      <span className="text-xs">Live Comparison</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
-                      <span className="text-xs">Real-time Quotes</span>
-                    </div>
-                  </div>
-                </div>
-              </FloatingElement>
+          
             </div>
           </div>
         </div>
