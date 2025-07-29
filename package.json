@@ -12,6 +12,18 @@
     "postbuild": "react-snap"
 
   },
+"reactSnap": {
+  "inlineCss": true,
+  "puppeteerArgs": ["--no-sandbox"],
+  "include": [
+    "/",
+    "/about",
+    "/services",
+    "/companies",
+    "/career",
+    "/team"
+  ]
+},
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-accordion": "^1.2.0",
