@@ -12,6 +12,8 @@ import Companies from "./pages/Companies";
 import Career from "./pages/Career";
 import Team from "./pages/Team";
 import NotFound from "./pages/NotFound";
+import Layout from "@/components/layout";
+
 // hii
 const queryClient = new QueryClient();
 
@@ -21,8 +23,8 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Navbar />
         <Routes>
+           <Route element={<Layout />}>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
@@ -30,6 +32,7 @@ const App = () => (
           <Route path="/career" element={<Career />} />
           <Route path="/team" element={<Team />} />
           <Route path="*" element={<NotFound />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

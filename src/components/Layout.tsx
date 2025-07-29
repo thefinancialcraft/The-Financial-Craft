@@ -1,30 +1,14 @@
+// src/components/Layout.tsx
+import Navbar from "@/components/Navbar";
+import { Outlet, useLocation } from "react-router-dom";
 import { Helmet } from 'react-helmet-async';
-import { useEffect, useState } from 'react';
-import HeroSection from '@/components/HeroSection';
-import InsuranceTypes from '@/components/InsuranceTypes';
-import ComparisonSection from '@/components/ComparisonSection';
-import QuoteForm from '@/components/QuoteForm';
-import TestimonialsSection from '@/components/TestimonialsSection';
-import TaxBenefitsSection from '@/components/TaxBenefitsSection';
-import Footer from '@/components/Footer';
-import { Analytics } from "@vercel/analytics/react";
-import WelcomePopup from "@/components/WelcomePopup";
-// ...other imports
 
-
-const Index = () => {
-  const [showPopup, setShowPopup] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setShowPopup(true), 10000);
-    return () => clearTimeout(timer);
-  }, []);
-
+const Layout = () => {
+  const location = useLocation();
 
   return (
-    <div className="min-h-screen">
-      {/* ✅ SEO Helmet Tags */}
-      <Helmet>
+    <>
+          <Helmet>
   {/* ✅ SEO Title & Updated Description */}
   <title>The Financial Craft | Compare Health, Life, Term & Car Insurance Plans in India </title>
   <meta
@@ -91,19 +75,13 @@ const Index = () => {
 </Helmet>
 
 
-      <WelcomePopup visible={showPopup} onClose={() => setShowPopup(false)} />
-
-      {/* Main Sections */}
-      <HeroSection />
-      <InsuranceTypes />
-      <ComparisonSection />
-      <QuoteForm />
-      <TestimonialsSection />
-      <TaxBenefitsSection />
-      <Analytics />
-      <Footer />
-    </div>
+      <Navbar />
+      {/* Outlet renders child routes */}
+      <main>
+        <Outlet />
+      </main>
+    </>
   );
 };
 
-export default Index;
+export default Layout;
