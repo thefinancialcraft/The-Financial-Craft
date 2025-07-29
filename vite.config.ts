@@ -11,11 +11,7 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-  ],
-  build: {
-    outDir: 'dist',
-    emptyOutDir: true,
-  },
+    ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

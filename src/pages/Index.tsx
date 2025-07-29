@@ -9,9 +9,6 @@ import TaxBenefitsSection from '@/components/TaxBenefitsSection';
 import Footer from '@/components/Footer';
 import { Analytics } from "@vercel/analytics/react";
 
-
-const isSnap = typeof navigator !== 'undefined' && navigator.userAgent === 'ReactSnap';
-
 const Index = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [form, setForm] = useState({ name: '', city: '', mobile: '', plan: '' });
@@ -36,7 +33,7 @@ const Index = () => {
   };
 
   return (
-   <div className="min-h-[100vh] overflow-x-hidden">
+    <div className="min-h-screen">
       {/* ✅ SEO Helmet Tags */}
       <Helmet>
   {/* ✅ SEO Title & Updated Description */}
