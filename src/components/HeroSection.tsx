@@ -10,6 +10,7 @@ const HeroSection = () => {
     >
       {children}
     </div>
+    
   );
 
   return (
