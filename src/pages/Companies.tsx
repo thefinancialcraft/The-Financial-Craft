@@ -146,32 +146,52 @@ const Companies = () => {
     <div className="min-h-screen">
        
       {/* ✅ SEO Helmet Tags for Companies Page */}
-      <Helmet>
-        <title>Top Health Insurance Companies in India | Compare Providers</title>
-        <meta name="description" content="Explore India’s leading health insurance providers with detailed features, premium benefits, and claim ratios. Make an informed choice with The Financial Craft." />
-        <meta name="keywords" content="top insurance providers India, trusted health insurance companies, insurance comparison India, best insurance companies India" />
+    <Helmet>
+  <title>Top Insurance Companies in India | Compare Plans | The Financial Craft</title>
+  <meta
+    name="description"
+    content="Discover India’s top insurance companies including Care Health, Niva Bupa, Star Health, ICICI Lombard & more. Compare features, ratings, claim support, and policies all in one place at The Financial Craft."
+  />
+  <meta
+    name="keywords"
+    content="insurance companies India, compare insurance providers, Niva Bupa, Care Health Insurance, Star Health, ICICI Lombard, top insurers India, claim ratio, insurance partners"
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.thefinancialcraft.com/companies" />
 
-        {/* Open Graph */}
-        <meta property="og:title" content="Top Health Insurance Companies in India | Compare Providers" />
-        <meta property="og:description" content="Explore top-rated health insurance providers in India with The Financial Craft. Find policy features, benefits, and compare them side-by-side." />
-        <meta property="og:image" content="/favicon.jpeg" />
-        <meta property="og:url" content="https://www.thefinancialcraft.com/companies" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="The Financial Craft" />
+  <meta name="author" content="Ajay Kumar" />
+  <meta name="publisher" content="The Financial Craft" />
+  <meta name="organization" content="The Financial Craft" />
+  <meta name="founder" content="Ajay Kumar" />
+  <meta name="foundingDate" content="2021" />
+  <meta name="address" content="F-13, 2nd Floor, Sector 6, Noida, Uttar Pradesh, India" />
+  <meta name="contact" content="+91-8882558932" />
 
-        {/* Twitter Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Top Health Insurance Companies in India | Compare Providers" />
-        <meta name="twitter:description" content="Explore India’s leading insurance providers with policy comparison, benefits, and expert insights at The Financial Craft." />
-        <meta name="twitter:image" content="/src/assets/tfc-logo.png" />
-        <meta name="twitter:site" content="@thefinancialcraft" />
-        <meta name="twitter:creator" content="@thefinancialcraft" />
-        <meta name="twitter:domain" content="thefinancialcraft.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:site_name" content="The Financial Craft" />
+  <meta property="og:title" content="Top Insurance Companies in India | The Financial Craft" />
+  <meta property="og:description" content="Explore top insurers like Care Health, Niva Bupa & Star Health. Compare features, prices & claim support to make smarter insurance choices." />
+  <meta property="og:url" content="https://www.thefinancialcraft.com/companies" />
+  <meta property="og:image" content="https://www.thefinancialcraft.com/assets/og-companies.jpg" />
 
-        {/* Canonical */}
-        <link rel="canonical" href="https://www.thefinancialcraft.com/companies" />
-        <meta name="robots" content="index, follow" />
-      </Helmet>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@thefinancialcraft" />
+  <meta name="twitter:title" content="Compare Insurance Companies in India | The Financial Craft" />
+  <meta name="twitter:description" content="Compare top insurance companies in India. Trusted ratings, real reviews, and detailed policy info – all in one place." />
+  <meta name="twitter:image" content="https://www.thefinancialcraft.com/assets/og-companies.jpg" />
+
+  <link rel="alternate" href="https://www.thefinancialcraft.com/" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/companies" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/services" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/about" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/team" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/careers" hrefLang="en" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" />
+</Helmet>
+
 
       {/* Hero Section */}
       <section className="py-20 gradient-subtle">

@@ -131,24 +131,52 @@ const Services = () => {
 
   return (
     <div className="min-h-screen">
-      <Helmet>
-        <title>Insurance Plan Comparison & Advisory Services | The Financial Craft</title>
-        <meta name="description" content="We help you find the best insurance company for your needs—whether it's family, individual, or critical illness coverage. Discover our services today." />
-        <meta name="keywords" content="insurance plan comparison services, health insurance advisory, best insurance services in India" />
+<Helmet>
+  <title>Insurance Services | Health, Life, Term & Motor Plans | The Financial Craft</title>
+  <meta
+    name="description"
+    content="Explore expert-guided insurance services for health, life, motor, and term plans. Compare policies, get free quotes, and buy online from trusted Indian insurers with The Financial Craft."
+  />
+  <meta
+    name="keywords"
+    content="insurance services India, health insurance plans, motor insurance, term insurance, life insurance, insurance comparison, expert advice, financial services"
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.thefinancialcraft.com/services" />
 
-        <meta property="og:title" content="Insurance Plan Comparison & Advisory Services | The Financial Craft" />
-        <meta property="og:description" content="Expert insurance services and comparison tools tailored to your health, life, or family needs in India." />
-        <meta property="og:url" content="https://www.thefinancialcraft.com/services" />
-        <meta property="og:type" content="website" />
+  <meta name="author" content="Ajay Kumar" />
+  <meta name="publisher" content="The Financial Craft" />
+  <meta name="organization" content="The Financial Craft" />
+  <meta name="founder" content="Ajay Kumar" />
+  <meta name="foundingDate" content="2021" />
+  <meta name="address" content="F-13, 2nd Floor, Sector 6, Noida, Uttar Pradesh, India" />
+  <meta name="contact" content="+91-8882558932" />
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Insurance Plan Comparison & Advisory Services | The Financial Craft" />
-        <meta name="twitter:description" content="We simplify insurance decisions with expert comparison services for every need." />
-        <meta name="twitter:image" content="/src/assets/tfc-logo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:site_name" content="The Financial Craft" />
+  <meta property="og:title" content="Explore Insurance Services | The Financial Craft" />
+  <meta property="og:description" content="Compare and buy health, life, and term insurance plans online. Get policy quotes and expert guidance with The Financial Craft’s insurance service hub." />
+  <meta property="og:url" content="https://www.thefinancialcraft.com/services" />
+  <meta property="og:image" content="https://www.thefinancialcraft.com/assets/og-services.jpg" />
 
-        <link rel="canonical" href="https://www.thefinancialcraft.com/services" />
-        <meta name="robots" content="index, follow" />
-      </Helmet>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@thefinancialcraft" />
+  <meta name="twitter:title" content="Insurance Services in India | The Financial Craft" />
+  <meta name="twitter:description" content="Compare insurance services from India’s top insurers. Health, life, term, and motor plans with premium tools and expert help." />
+  <meta name="twitter:image" content="https://www.thefinancialcraft.com/assets/og-services.jpg" />
+
+  <link rel="alternate" href="https://www.thefinancialcraft.com/" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/companies" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/services" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/about" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/team" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/careers" hrefLang="en" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" />
+</Helmet>
+
 
       {/* Hero Section */}
       <section className="py-20 gradient-subtle">

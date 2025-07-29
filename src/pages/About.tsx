@@ -47,24 +47,52 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
-       <Helmet>
-        <title>About The Financial Craft | Empowering Insurance Decisions</title>
-        <meta name="description" content="Learn more about The Financial Craft, our mission to make insurance simpler, and how we help you compare the best health insurance companies in India." />
-        <meta name="keywords" content="about best insurance comparison platform, insurance experts India, our mission insurance" />
+     <Helmet>
+  <title>About Us | Ajay Kumar, The Financial Craft (Founded 2021)</title>
+  <meta
+    name="description"
+    content="Founded by Ajay Kumar in 2021, The Financial Craft is a digital-first insurance comparison platform helping Indians make informed decisions. Learn about our values, story, and commitment to simplifying insurance."
+  />
+  <meta
+    name="keywords"
+    content="who is ceo of the financial craft, about financial craft, about us, Ajay Kumar, insurance startup India, insurance platform, insurance founders, insurance guide India, customer-first insurance"
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.thefinancialcraft.com/about" />
 
-        <meta property="og:title" content="About The Financial Craft | Empowering Insurance Decisions" />
-        <meta property="og:description" content="Who we are and how we’re making insurance simpler for families and individuals in India." />
-        <meta property="og:url" content="https://www.thefinancialcraft.com/about" />
-        <meta property="og:type" content="website" />
+  <meta name="author" content="Ajay Kumar" />
+  <meta name="publisher" content="The Financial Craft" />
+  <meta name="organization" content="The Financial Craft" />
+  <meta name="founder" content="Ajay Kumar" />
+  <meta name="foundingDate" content="2021" />
+  <meta name="address" content="F-13, 2nd Floor, Sector 6, Noida, Uttar Pradesh, India" />
+  <meta name="contact" content="+91-8882558932" />
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About The Financial Craft | Empowering Insurance Decisions" />
-        <meta name="twitter:description" content="Meet the people and purpose behind India's most user-friendly insurance comparison platform." />
-        <meta name="twitter:image" content="/src/assets/tfc-logo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:site_name" content="The Financial Craft" />
+  <meta property="og:title" content="About The Financial Craft | Founded by Ajay Kumar" />
+  <meta property="og:description" content="India's trusted insurance comparison platform. Learn about our journey, vision, and how we’re transforming the insurance industry with transparency and technology." />
+  <meta property="og:url" content="https://www.thefinancialcraft.com/about" />
+  <meta property="og:image" content="https://www.thefinancialcraft.com/assets/og-about.jpg" />
 
-        <link rel="canonical" href="https://www.thefinancialcraft.com/about" />
-        <meta name="robots" content="index, follow" />
-      </Helmet>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@thefinancialcraft" />
+  <meta name="twitter:title" content="About Us | The Financial Craft by Ajay Kumar" />
+  <meta name="twitter:description" content="Founded in 2021, The Financial Craft helps you compare insurance plans. Learn who we are and why our team is passionate about financial literacy." />
+  <meta name="twitter:image" content="https://www.thefinancialcraft.com/assets/og-about.jpg" />
+
+  <link rel="alternate" href="https://www.thefinancialcraft.com/" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/companies" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/services" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/about" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/team" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/careers" hrefLang="en" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" />
+</Helmet>
+
 
       {/* Hero Section */}
       <section className="py-20 gradient-subtle">
