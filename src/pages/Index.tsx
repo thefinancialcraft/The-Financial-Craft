@@ -9,15 +9,20 @@ import TaxBenefitsSection from '@/components/TaxBenefitsSection';
 import Footer from '@/components/Footer';
 import { Analytics } from "@vercel/analytics/react";
 
+
+const isSnap = typeof navigator !== 'undefined' && navigator.userAgent === 'ReactSnap';
+
 const Index = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [form, setForm] = useState({ name: '', city: '', mobile: '', plan: '' });
   const [submitted, setSubmitted] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => setShowPopup(true), 10000);
-    return () => clearTimeout(timer);
-  }, []);
+ useEffect(() => {
+  if (navigator.userAgent === 'ReactSnap') return; // SSR/bot case me skip
+  const timer = setTimeout(() => setShowPopup(true), 10000);
+  return () => clearTimeout(timer);
+}, []);
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -31,7 +36,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen">
+   <div className="min-h-[100vh] overflow-x-hidden">
       {/* ✅ SEO Helmet Tags */}
       <Helmet>
   {/* ✅ SEO Title & Updated Description */}
