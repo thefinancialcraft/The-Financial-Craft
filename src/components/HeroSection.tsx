@@ -1,21 +1,30 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Heart, Shield, TrendingUp, Award, CheckCircle, ArrowRight } from 'lucide-react';
+import { Heart, Shield, Users, ArrowRight, Play, TrendingUp, Award, CheckCircle } from 'lucide-react';
 
 const HeroSection = () => {
-  const FloatingElement = ({ children, delay = 0, className = "" }) => (
-    <div
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
+  const FloatingElement = ({ children, delay = 0, className = "" }: {
+    children: React.ReactNode;
+    delay?: number;
+    className?: string;
+  }) => (
+    <div 
       className={`animate-float ${className}`}
       style={{ animationDelay: `${delay}s` }}
     >
       {children}
     </div>
-    
   );
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-subtle py-20">
-      {/* Background Circles */}
+    <section className="relative min-h-[120vh] flex items-center justify-center overflow-hidden gradient-subtle">
+      {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <FloatingElement delay={0} className="absolute top-20 left-10">
           <div className="w-16 h-16 rounded-full bg-primary/10 animate-pulse-slow" />
@@ -26,14 +35,14 @@ const HeroSection = () => {
         <FloatingElement delay={2} className="absolute bottom-32 left-20">
           <div className="w-20 h-20 rounded-full bg-primary/10 animate-pulse-slow" />
         </FloatingElement>
-
-        {/* Heartbeat SVG */}
+        
+        {/* Heartbeat Lines */}
         <div className="absolute top-10 left-60 opacity-20">
           <svg width="200" height="60" viewBox="0 0 100 60" className="text-primary">
-            <path
-              d="M10,30 L40,30 L50,10 L60,50 L70,20 L80,40 L90,30 L190,30"
-              stroke="currentColor"
-              strokeWidth="2"
+            <path 
+              d="M10,30 L40,30 L50,10 L60,50 L70,20 L80,40 L90,30 L190,30" 
+              stroke="currentColor" 
+              strokeWidth="2" 
               fill="none"
               className="animate-pulse"
             />
@@ -41,11 +50,10 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Content */}
-      <div className="container mx-auto px-6 relative z-10">
+      <div style={{ marginTop: '-70px' }} className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Side */}
-          <div className="space-y-8 animate-fade-in">
+          {/* Left Content */}
+          <div className={`space-y-8 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
             <div className="space-y-4">
               <div className="inline-flex items-center space-x-2 bg-card/80 backdrop-blur-sm rounded-full px-6 py-2 shadow-soft">
                 <Heart className="w-5 h-5 text-primary animate-pulse" />
@@ -53,25 +61,29 @@ const HeroSection = () => {
                   Trusted by 50,000+ Families
                 </span>
               </div>
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+              
+              <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
                 <span className="block text-foreground">Find the</span>
                 <span className="block text-gradient">Best Health</span>
                 <span className="block text-foreground">Insurance</span>
               </h1>
+              
               <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-                Compare plans from top insurers and save up to 30% on premiums.
+                Compare plans from top insurers and save up to 30% on premiums. 
                 Get instant quotes tailored for Indian families.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
+              <Button 
+                size="lg" 
                 className="gradient-primary hover-lift shadow-medium group text-lg px-8 py-6"
               >
                 Compare Plans Instantly
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
+              
+              
             </div>
 
             {/* Stats */}
@@ -91,8 +103,8 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Side */}
-          <div className="relative animate-fade-in-scale">
+          {/* Right Content - Interactive Features */}
+          <div className={`relative ${isVisible ? 'animate-fade-in-scale' : 'opacity-0'}`}>
             <div className="relative space-y-6">
               {/* Feature Cards */}
               <div className="grid grid-cols-2 gap-4">
@@ -102,10 +114,11 @@ const HeroSection = () => {
                       <Shield className="w-6 h-6 text-primary" />
                     </div>
                     <div className="text-lg font-medium">₹50L+ Coverage</div>
-                    <div className="text-sm text-muted-foreground">Maximum Protection</div>
+                    <div style={{marginBottom:'-10px'}} className="text-sm text-muted-foreground">Maximum Protection</div>
                   </div>
                 </FloatingElement>
-                <FloatingElement delay={0.1} className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 shadow-medium hover-lift">
+
+                <FloatingElement delay={0.2} className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 shadow-medium hover-lift">
                   <div className="text-center space-y-3">
                     <div className="w-12 h-12 mx-auto bg-secondary/10 rounded-full flex items-center justify-center">
                       <TrendingUp className="w-6 h-6 text-secondary" />
@@ -114,7 +127,8 @@ const HeroSection = () => {
                     <div className="text-sm text-muted-foreground">Best Prices</div>
                   </div>
                 </FloatingElement>
-                <FloatingElement delay={0.2} className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 shadow-medium hover-lift">
+
+                <FloatingElement delay={0.4} className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 shadow-medium hover-lift">
                   <div className="text-center space-y-3">
                     <div className="w-12 h-12 mx-auto bg-accent/10 rounded-full flex items-center justify-center">
                       <Award className="w-6 h-6 text-accent" />
@@ -123,7 +137,8 @@ const HeroSection = () => {
                     <div className="text-sm text-muted-foreground">Top Companies</div>
                   </div>
                 </FloatingElement>
-                <FloatingElement delay={0.3} className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 shadow-medium hover-lift">
+
+                <FloatingElement delay={0.6} className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 shadow-medium hover-lift">
                   <div className="text-center space-y-3">
                     <div className="w-12 h-12 mx-auto bg-green-500/10 rounded-full flex items-center justify-center">
                       <CheckCircle className="w-6 h-6 text-green-500" />
@@ -134,10 +149,10 @@ const HeroSection = () => {
                 </FloatingElement>
               </div>
 
-              {/* Centered Big Box */}
-              <FloatingElement delay={0.4} className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl p-8 shadow-strong hover-lift">
+              {/* Central Interactive Element */}
+              <FloatingElement delay={0.8} className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl p-8 shadow-strong hover-lift">
                 <div className="text-center space-y-4">
-                  <div className="text-5xl font-bold text-gradient">₹10,000+</div>
+                  <div className="text-6xl font-bold text-gradient">₹10,000+</div>
                   <div className="text-lg font-medium">Average Savings Per Family</div>
                   <div className="text-sm text-muted-foreground">Compare & Save with Smart Choices</div>
                   <div className="flex justify-center space-x-4 pt-4">
@@ -158,7 +173,7 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-gentle">
+      <div  className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-gentle">
         <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse" />
         </div>

@@ -14,18 +14,15 @@ const Index = () => {
   const [form, setForm] = useState({ name: '', city: '', mobile: '', plan: '' });
   const [submitted, setSubmitted] = useState(false);
 
- useEffect(() => {
-  if (navigator.userAgent === 'ReactSnap') return; // SSR/bot case me skip
-  const timer = setTimeout(() => setShowPopup(true), 10000);
-  return () => clearTimeout(timer);
-}, []);
-
+  useEffect(() => {
+    const timer = setTimeout(() => setShowPopup(true), 10000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
   };
-  
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -60,9 +57,6 @@ const Index = () => {
   <meta name="contact" content="+91-8882558932" />
   <meta name="mail" content="ajay.kumar@thefinancialcraft.com" />
   <meta name="mail" content="info@thefinancialcraft.com" />
-  <meta name="location" content="Noida, Uttar Pradesh, India" />
-  <meta name="language" content="English" />
-  
 
   {/* ✅ Open Graph (Facebook, LinkedIn, WhatsApp) */}
   <meta property="og:type" content="website" />
@@ -103,7 +97,6 @@ const Index = () => {
   {/* ✅ Mobile & Favicon */}
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="icon" href="/public/favicon.ico" />
-
 </Helmet>
 
 
