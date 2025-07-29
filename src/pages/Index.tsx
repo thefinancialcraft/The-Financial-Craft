@@ -60,6 +60,9 @@ const Index = () => {
   <meta name="contact" content="+91-8882558932" />
   <meta name="mail" content="ajay.kumar@thefinancialcraft.com" />
   <meta name="mail" content="info@thefinancialcraft.com" />
+  <meta name="location" content="Noida, Uttar Pradesh, India" />
+  <meta name="language" content="English" />
+  
 
   {/* ✅ Open Graph (Facebook, LinkedIn, WhatsApp) */}
   <meta property="og:type" content="website" />
@@ -100,6 +103,7 @@ const Index = () => {
   {/* ✅ Mobile & Favicon */}
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="icon" href="/public/favicon.ico" />
+
 </Helmet>
 
 
