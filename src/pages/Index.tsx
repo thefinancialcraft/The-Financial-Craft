@@ -34,31 +34,71 @@ const Index = () => {
     <div className="min-h-screen">
       {/* ✅ SEO Helmet Tags */}
       <Helmet>
-        <title>The Financial Craft – Compare Your Best Plan Here</title>
-        <meta name="description" content="Compare and choose the best health and life insurance plans in India at The Financial Craft. Get personalized quotes, expert advice, and the right coverage for you and your family." />
-        <meta name="keywords" content="compare insurance, health insurance, life insurance, best plans, insurance quotes, affordable insurance, India insurance portal, The Financial Craft, term plans, health policy, policy comparison" />
+  {/* ✅ SEO Title & Updated Description */}
+  <title>The Financial Craft | Compare Health, Life, Term & Car Insurance Plans in India </title>
+  <meta
+    name="description"
+    content="Compare Health, Life, and Motor Insurance Plans — Get Free Quotes from Top Insurers. Buy Policies Online Instantly with Expert Assistance from The Financial Craft. Your Trusted Partner for Term Insurance, Health Coverage, Car Insurance, Tax-Saving Plans, Investment Solutions & More."
+  />
+  <meta
+    name="keywords"
+    content="insurance comparison India, health insurance plans, term insurance India, car insurance, best insurance companies, Care Health, Niva Bupa, Star Health, ICICI Lombard, Tata AIG, tax-saving insurance, investment insurance plans, low premium insurance, compare insurance online"
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.thefinancialcraft.com/" />
 
-        {/* Open Graph */}
-        <meta property="og:title" content="The Financial Craft – Compare Your Best Plan Here" />
-        <meta property="og:description" content="Compare top insurance companies, premiums, and benefits. Find the best plan for you and your family with expert guidance at The Financial Craft." />
-        <meta property="og:image" content="/favicon.jpeg" />
-        <meta property="og:url" content="https://www.thefinancialcraft.com/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="The Financial Craft" />
-        <meta property="og:locale" content="en_IN" />
+  {/* ✅ Business Identity */}
+  <meta name="author" content="Ajay Kumar" />
+  <meta name="publisher" content="The Financial Craft" />
+  <meta name="organization" content="The Financial Craft" />
+  <meta name="founder" content="Ajay Kumar" />
+  <meta name="foundingDate" content="2021" />
+  <meta name="address" content="F-13, 2nd Floor, Sector 6, Noida, Uttar Pradesh, India" />
+  <meta name="contact" content="+91-8882558932" />
+  <meta name="mail" content="ajay.kumar@thefinancialcraft.com" />
+  <meta name="mail" content="info@thefinancialcraft.com" />
 
-        {/* Twitter Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@thefinancialcraft" />
-        <meta name="twitter:title" content="The Financial Craft – Compare Your Best Plan Here" />
-        <meta name="twitter:description" content="Compare top health and term insurance plans online. Find the right plan with ease and expert support at The Financial Craft." />
-        <meta name="twitter:image" content="/src/assets/tfc-logo.png" />
-        <meta name="twitter:creator" content="@thefinancialcraft" />
-        <meta name="twitter:domain" content="thefinancialcraft.com" />
+  {/* ✅ Open Graph (Facebook, LinkedIn, WhatsApp) */}
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:site_name" content="The Financial Craft" />
+  <meta
+    property="og:title"
+    content="Compare Insurance Plans from Top Indian Companies | The Financial Craft"
+  />
+  <meta
+    property="og:description"
+    content="Compare Health, Life, Motor & Term Insurance Plans Online. Get Expert Help, Free Quotes & Instant Policy from India's Top Insurers like Care, Niva Bupa, ICICI & More."
+  />
+  <meta property="og:url" content="https://www.thefinancialcraft.com/" />
+  <meta property="og:image" content="https://www.thefinancialcraft.com/assets/og-home.jpg" />
 
-        <link rel="canonical" href="https://www.thefinancialcraft.com/" />
-        <meta name="robots" content="index, follow" />
-      </Helmet>
+  {/* ✅ Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@thefinancialcraft" />
+  <meta
+    name="twitter:title"
+    content="Compare Insurance Plans Online | The Financial Craft"
+  />
+  <meta
+    name="twitter:description"
+    content="Get instant quotes and buy insurance policies online from India's top companies. Trusted help with term, health, motor, and investment insurance."
+  />
+  <meta name="twitter:image" content="https://www.thefinancialcraft.com/assets/og-home.jpg" />
+
+  {/* ✅ Alternate Links for Crawling */}
+  <link rel="alternate" href="https://www.thefinancialcraft.com/" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/companies" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/services" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/about" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/team" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/career" hrefLang="en" />
+
+  {/* ✅ Mobile & Favicon */}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" />
+</Helmet>
+
 
       {/* Welcome Popup */}
       {showPopup && (
