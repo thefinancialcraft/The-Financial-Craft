@@ -25,6 +25,7 @@ const Index = () => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
   };
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
