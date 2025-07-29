@@ -3,6 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import Navbar from "./components/Navbar";
 import Index from "./pages/Index";
 import About from "./pages/About";
@@ -11,7 +12,7 @@ import Companies from "./pages/Companies";
 import Career from "./pages/Career";
 import Team from "./pages/Team";
 import NotFound from "./pages/NotFound";
-
+// hii
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -32,7 +33,9 @@ const App = () => (
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
+    <SpeedInsights />
   </QueryClientProvider>
+  
 );
 
 export default App;

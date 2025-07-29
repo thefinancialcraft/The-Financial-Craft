@@ -29,8 +29,10 @@ import {
   Heart,
   Star
 } from 'lucide-react';
+import { Helmet } from "react-helmet";
 
 const Team = () => {
+  
   // Founder Card Data
   const founder = {
     name: 'Ajay Kumar',
@@ -278,6 +280,54 @@ const Team = () => {
 
   return (
     <div className="min-h-screen">
+
+       <Helmet>
+  <title>Meet Our Team | Behind The Financial Craft</title>
+  <meta
+    name="description"
+    content="Meet the passionate team driving The Financial Craft. From insurance experts to product specialists, our people are dedicated to simplifying financial protection for every Indian."
+  />
+  <meta
+    name="keywords"
+    content="financial craft team, Ajay Kumar founder, insurance experts India, team behind insurance platform, finance startup team, insurance advisors"
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.thefinancialcraft.com/team" />
+
+  <meta name="author" content="Ajay Kumar" />
+  <meta name="publisher" content="The Financial Craft" />
+  <meta name="organization" content="The Financial Craft" />
+  <meta name="founder" content="Ajay Kumar" />
+  <meta name="foundingDate" content="2021" />
+  <meta name="address" content="F-13, 2nd Floor, Sector 6, Noida, Uttar Pradesh, India" />
+  <meta name="contact" content="+91-8882558932" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:site_name" content="The Financial Craft" />
+  <meta property="og:title" content="The Financial Craft Team | Know Our Experts" />
+  <meta property="og:description" content="Get to know the team behind The Financial Craft. Meet the people making insurance simpler, smarter, and more transparent for India." />
+  <meta property="og:url" content="https://www.thefinancialcraft.com/team" />
+  <meta property="og:image" content="https://www.thefinancialcraft.com/assets/public/favicon-32x32.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@thefinancialcraft" />
+  <meta name="twitter:title" content="Meet The Financial Craft Team" />
+  <meta name="twitter:description" content="Our experts are here to help you make smarter insurance decisions. Meet our mission-driven team of advisors and product leaders." />
+  <meta name="twitter:image" content="https://www.thefinancialcraft.com/assets/public/favicon-32x32.png"  />
+
+  <link rel="alternate" href="https://www.thefinancialcraft.com/" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/companies" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/services" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/about" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/team" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/careers" hrefLang="en" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="icon" href="/public/favicon.ico" />
+</Helmet>
+
+
       {/* Hero Section */}
       <section className="py-20 gradient-subtle">
         <div className="container mx-auto px-6">

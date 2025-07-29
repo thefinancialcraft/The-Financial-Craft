@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import Footer from '@/components/Footer';
+import { Helmet } from "react-helmet";
 import { 
   Briefcase, 
   MapPin, 
@@ -17,6 +18,7 @@ import {
 } from 'lucide-react';
 
 const Career = () => {
+ 
   const openings = [
     {
       title: 'Proccess Head',
@@ -109,6 +111,56 @@ const Career = () => {
 
   return (
     <div className="min-h-screen">
+       
+       <Helmet>
+  <title>Careers at The Financial Craft | Join Our Mission</title>
+  <meta
+    name="description"
+    content="Be part of India’s fastest-growing insurance comparison platform. Join The Financial Craft and help shape the future of financial literacy, customer trust, and tech innovation in insurance."
+  />
+  <meta
+    name="keywords"
+    content="insurance jobs India, careers financial craft, work with insurance startup, remote finance jobs, customer support insurance, hiring insurance industry"
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.thefinancialcraft.com/careers" />
+
+  <meta name="author" content="Ajay Kumar" />
+  <meta name="publisher" content="The Financial Craft" />
+  <meta name="organization" content="The Financial Craft" />
+  <meta name="founder" content="Ajay Kumar" />
+  <meta name="foundingDate" content="2021" />
+  <meta name="address" content="F-13, 2nd Floor, Sector 6, Noida, Uttar Pradesh, India" />
+  <meta name="contact" content="+91-8882558932" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:site_name" content="The Financial Craft" />
+  <meta property="og:title" content="Join The Financial Craft | Careers Page" />
+  <meta property="og:description" content="Explore exciting roles in product, marketing, customer success & more. Join our mission to simplify insurance for millions across India." />
+  <meta property="og:url" content="https://www.thefinancialcraft.com/careers" />
+    <meta property="og:image" content="https://www.thefinancialcraft.com/assets/public/favicon-32x32.png" />
+
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@thefinancialcraft" />
+  <meta name="twitter:title" content="Careers | The Financial Craft" />
+  <meta name="twitter:description" content="Join our team of professionals simplifying insurance in India. Great culture, flexible roles, and impactful work await." />
+ <meta name="twitter:image" content="https://www.thefinancialcraft.com/assets/public/favicon-32x32.png"  />
+
+  <link rel="alternate" href="https://www.thefinancialcraft.com/" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/companies" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/services" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/about" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/team" hrefLang="en" />
+  <link rel="alternate" href="https://www.thefinancialcraft.com/careers" hrefLang="en" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="icon" href="/public/favicon.ico" />
+</Helmet>
+
+
+
       {/* Hero Section */}
       <section className="py-20 gradient-subtle">
         <div className="container mx-auto px-6">
