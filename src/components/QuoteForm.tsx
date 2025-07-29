@@ -56,12 +56,7 @@ const QuoteForm = () => {
     return `₹${value.toLocaleString()}`;
   };
 
-  const calculatePremium = () => {
-    const basePremium = formData.sumInsured[0] * 0.02;
-    const ageFactor = parseInt(formData.age) > 45 ? 1.5 : 1;
-    const memberFactor = formData.members > 1 ? 1.2 : 1;
-    return Math.round(basePremium * ageFactor * memberFactor);
-  };
+
 
   const nextStep = () => {
     if (currentStep < totalSteps) {
@@ -82,7 +77,7 @@ const handleSubmit = () => {
 
 
   return (
-    <section className="py-20 min-h-[80vh] bg-gradient-to-br from-[#f8fafc] via-[#f1f5f9] to-[#e0e7ef] relative">
+    <section className="py-20  bg-gradient-to-br from-[#f8fafc] via-[#f1f5f9] to-[#e0e7ef] relative">
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-2 tracking-tight">
