@@ -23,8 +23,8 @@ const InsuranceTypes = () => {
     {
       icon: Heart,
       title: "Health Insurance",
-      description: "Comprehensive coverage for individuals with cashless benefits",
-      features: ["₹5L - ₹1Cr Coverage", "Cashless Treatment", "Pre & Post Hospitalization"],
+      description: "Comprehensive health coverage for individuals and families.",
+      features: ["Cashless Hospitalization", "Pre & Post Hospitalization", "₹5L - ₹1Cr Coverage"],
       color: "primary",
       gradient: "from-primary to-primary-glow",
       image: healthImage
@@ -32,8 +32,8 @@ const InsuranceTypes = () => {
     {
       icon: Shield,
       title: "Life Insurance",
-      description: "Complete protection for your entire family under one policy",
-      features: ["Shared Sum Insured", "Coverage for 6 Members", "Maternity Benefits"],
+      description: "Secure your family's future with life insurance plans.",
+      features: ["Tax Benefits", "Flexible Premiums", "High Sum Assured"],
       color: "secondary",
       gradient: "from-secondary to-green-400",
       image: lifeImage
@@ -41,8 +41,8 @@ const InsuranceTypes = () => {
     {
       icon: Car,
       title: "Motor Insurance",
-      description: "Specialized coverage for critical illnesses and surgeries",
-      features: ["Lump Sum Payout", "25+ Critical Illnesses", "No Survival Period"],
+      description: "Protect your vehicle against accidents and damages.",
+      features: ["Third-Party Liability", "Own Damage Cover", "Cashless Repairs"],
       color: "destructive",
       gradient: "from-red-500 to-pink-500",
       image: motorImage
@@ -50,8 +50,8 @@ const InsuranceTypes = () => {
     {
       icon: PlaneTakeoff,
       title: "Travel Insurance",
-      description: "Tailored health insurance for elderly family members",
-      features: ["Age up to 80 Years", "No Medical Check-up", "Chronic Disease Cover"],
+      description: "Stay protected during your domestic and international trips.",
+      features: ["Trip Cancellation Cover", "Medical Emergencies", "Lost Baggage Assistance"],
       color: "accent",
       gradient: "from-accent to-orange-400",
       image: travelImage
@@ -59,8 +59,8 @@ const InsuranceTypes = () => {
     {
       icon: HandCoins,
       title: "Term Insurance",
-      description: "Complete maternity and newborn care coverage",
-      features: ["Pre & Post Natal Care", "Newborn Coverage", "Vaccination Costs"],
+      description: "Affordable life cover for a specific term period.",
+      features: ["High Coverage at Low Premiums", "Tax Benefits", "Critical Illness Rider"],
       color: "secondary",
       gradient: "from-pink-400 to-purple-500",
       image: termImage
@@ -68,8 +68,8 @@ const InsuranceTypes = () => {
     {
       icon: House,
       title: "Home Insurance",
-      description: "Employer-provided group health insurance benefits",
-      features: ["Employee Coverage", "Family Extension", "Portability Benefits"],
+      description: "Comprehensive protection for your home and belongings.",
+      features: ["Natural Disaster Cover", "Theft Protection", "Affordable Premiums"],
       color: "primary",
       gradient: "from-blue-600 to-indigo-600",
       image: homeImage
