@@ -3,6 +3,7 @@ import tfcLogo from '@/assets/tfc-logo.png';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Shield, Phone } from 'lucide-react';
+import { Home as HomeIcon, Building as BuildingIcon, Briefcase as ServicesIcon, Info as InfoIcon, Users as TeamIcon, UserCheck as CareerIcon } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -107,15 +108,14 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden absolute right-0 top-1/2 -translate-y-1/2">
+          <div className="md:hidden  absolute right-0 top-1/2 -translate-y-1/2">
             <Button
-              variant="outline"
-              size="sm"
+              
               onClick={() => setIsOpen(!isOpen)}
-              className="focus:bg-transparent active:bg-transparent hover:bg-transparent"
-              style={{ background: 'transparent', color: 'inherit'   }}
+              className="focus:bg-transparent active:bg-transparent text-2xl hover:bg-transparent"
+              style={{ background: 'transparent', color: 'inherit' }}
             >
-              {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {isOpen ? <X /> : <Menu />}
             </Button>
           </div>
         </div>
@@ -124,24 +124,35 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden py-4 border-t animate-fade-in absolute left-0 top-full w-full z-50 bg-background shadow-lg p-6">
             <div className="flex flex-col space-y-4">
+              <p  className={`text-lg border-b-2 pb-2 font-medium transition-colors hover:text-primary`}>Menu</p>
               {navItems.map((item) => (
+                
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`text-sm font-medium transition-colors hover:text-primary ${
-                    isActive(item.path) ? 'text-primary' : 'text-muted-foreground'
+                  className={` mt-10 pt-1 font-medium transition-colors hover:text-primary ${
+                    isActive(item.path) ? 'text-primary opacity-100 text-base'  : 'text-muted-foreground opacity-50 text-sm'
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
-                  {item.name}
+                  <div className="flex items-center space-x-2">
+                    {/* Add icons here */}
+                    {item.name === 'Home' && <HomeIcon className="w-5 h-5" />}
+                    {item.name === 'Companies' && <BuildingIcon className="w-5 h-5" />}
+                    {item.name === 'Services' && <ServicesIcon className="w-5 h-5" />}
+                    {item.name === 'About' && <InfoIcon className="w-5 h-5" />}
+                    {item.name === 'Team' && <TeamIcon className="w-5 h-5" />}
+                    {item.name === 'Careers' && <CareerIcon className="w-5 h-5" />}
+                    <span>{item.name}</span>
+                  </div>
                 </Link>
               ))}
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="outline" size="sm">
+                <Button variant="outline"   size="sm" className="h-10">
                   <Phone className="w-4 h-4 mr-2" />
                   +91 888 255 8932
                 </Button>
-                <Button size="sm" className="gradient-primary">
+                <Button size="sm" className="gradient-primary h-10" >
                   Get Quote
                 </Button>
               </div>

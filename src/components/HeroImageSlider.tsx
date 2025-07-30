@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import hrImg1 from "@/assets/hpy_faimly.png";
-import carImg1 from "@/assets/car-pro.webp";
+import hrImg2 from "@/assets/imgBnr2.jpg";
 import plyFml1 from "@/assets/Playing Faimly.png"
 
   const FloatingElement = ({ children, delay = 0, className = "" }: {
@@ -20,6 +20,7 @@ import plyFml1 from "@/assets/Playing Faimly.png"
 const images = [
   hrImg1,
   plyFml1,
+  hrImg2,
  
   
 ];
@@ -64,7 +65,7 @@ const ImageSliderInsideFloatingElement = () => {
 const bgColorModes = [
   "", // First card
   "#faf8f5", // Second card
-  "#faf8f5", // Third card (add more as needed)
+  "#e4f5f5", // Third card (add more as needed)
 ];
 
 

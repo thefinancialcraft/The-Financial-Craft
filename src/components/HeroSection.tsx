@@ -97,7 +97,7 @@ const HeroSection = () => {
                 <span className="block text-foreground">In India</span>
               </h1>
               
-              <p className="text-[20px] text-muted-foreground leading-relaxed max-w-lg">
+              <p className="md:text-[20px] text-[14px] text-muted-foreground leading-relaxed max-w-lg">
                 Compare health, life, and motor insurance plans from top Indian insurers. Get instant personalized quotes and save up to 30% today.
               </p>
             </div>

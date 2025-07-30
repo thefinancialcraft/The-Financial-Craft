@@ -46,7 +46,7 @@ const BrandLogoViewer = () => {
         {logos.map((logo, idx) => (
           <div
             key={idx}
-            className="flex-shrink-0 w-[120px] md:w-[200px] h-full flex items-center justify-center p-2 md:p-4 hover:text-gray-900 transition-colors opacity-50 pt-5 hover:opacity-100"
+            className="flex-shrink-0 mr-[20px] md:mr-[60px] w-[100px] md:w-[140px] h-full flex items-center justify-center p-2 md:p-4 hover:text-gray-900 transition-colors opacity-50 pt-5 hover:opacity-100"
             onMouseEnter={() => {
               if (sliderRef.current) {
                 sliderRef.current.style.animationPlayState = 'paused';
@@ -79,6 +79,7 @@ const BrandLogoViewer = () => {
             }
           }
 
+         
           .animate-scroll {
             animation: scroll 25s linear infinite;
           }

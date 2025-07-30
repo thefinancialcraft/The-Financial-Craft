@@ -1,78 +1,66 @@
 import { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { 
+  User, 
+  Users, 
   Heart, 
-  Shield, 
-  Car, 
-  PlaneTakeoff, 
-  HandCoins, 
-  House,
+  Stethoscope, 
+  Baby, 
+  Shield,
   ArrowRight 
 } from 'lucide-react';
-import healthImage from '@/assets/Insurance-Type/1.avif';
-import lifeImage from '@/assets/Insurance-Type/2.jpg';
-import motorImage from '@/assets/Insurance-Type/3.png';
-import travelImage from '@/assets/Insurance-Type/4.jpg';
-import termImage from '@/assets/Insurance-Type/5.jpg';
-import homeImage from '@/assets/Insurance-Type/6.jpg';
 
 const InsuranceTypes = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
   const insuranceTypes = [
     {
-      icon: Heart,
-      title: "Health Insurance",
+      icon: User,
+      title: "Individual Health",
       description: "Comprehensive coverage for individuals with cashless benefits",
       features: ["₹5L - ₹1Cr Coverage", "Cashless Treatment", "Pre & Post Hospitalization"],
       color: "primary",
-      gradient: "from-primary to-primary-glow",
-      image: healthImage
+      gradient: "from-primary to-primary-glow"
     },
     {
-      icon: Shield,
-      title: "Life Insurance",
+      icon: Users,
+      title: "Family Floater",
       description: "Complete protection for your entire family under one policy",
       features: ["Shared Sum Insured", "Coverage for 6 Members", "Maternity Benefits"],
       color: "secondary",
-      gradient: "from-secondary to-green-400",
-      image: lifeImage
+      gradient: "from-secondary to-green-400"
     },
     {
-      icon: Car,
-      title: "Motor Insurance",
+      icon: Heart,
+      title: "Critical Illness",
       description: "Specialized coverage for critical illnesses and surgeries",
       features: ["Lump Sum Payout", "25+ Critical Illnesses", "No Survival Period"],
       color: "destructive",
-      gradient: "from-red-500 to-pink-500",
-      image: motorImage
+      gradient: "from-red-500 to-pink-500"
     },
     {
-      icon: PlaneTakeoff,
-      title: "Travel Insurance",
+      icon: Stethoscope,
+      title: "Senior Citizens",
       description: "Tailored health insurance for elderly family members",
       features: ["Age up to 80 Years", "No Medical Check-up", "Chronic Disease Cover"],
       color: "accent",
-      gradient: "from-accent to-orange-400",
-      image: travelImage
+      gradient: "from-accent to-orange-400"
     },
     {
-      icon: HandCoins,
-      title: "Term Insurance",
+      icon: Baby,
+      title: "Maternity Cover",
       description: "Complete maternity and newborn care coverage",
       features: ["Pre & Post Natal Care", "Newborn Coverage", "Vaccination Costs"],
       color: "secondary",
-      gradient: "from-pink-400 to-purple-500",
-      image: termImage
+      gradient: "from-pink-400 to-purple-500"
     },
     {
-      icon: House,
-      title: "Home Insurance",
+      icon: Shield,
+      title: "Group Insurance",
       description: "Employer-provided group health insurance benefits",
       features: ["Employee Coverage", "Family Extension", "Portability Benefits"],
       color: "primary",
-      gradient: "from-blue-600 to-indigo-600",
-      image: homeImage
+      gradient: "from-blue-600 to-indigo-600"
     }
   ];
 
@@ -81,10 +69,12 @@ const InsuranceTypes = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold mb-6">
-            <span className="text-foreground">Types of <span className=" text-gradient">Insurance Plans</span> </span>
+            <span className="text-foreground">Choose Your</span>
+            <span className="block text-gradient">Insurance Type</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-           Smarter insurance starts here. From health and life to travel and vehicles, explore all plans in one place. Quick comparisons, zero confusion — get covered in just a few clicks.
+            We offer comprehensive health insurance solutions for every life stage 
+            and family need. Find the perfect coverage that suits your requirements.
           </p>
         </div>
 
@@ -92,7 +82,7 @@ const InsuranceTypes = () => {
           {insuranceTypes.map((type, index) => {
             const IconComponent = type.icon;
             const isHovered = hoveredCard === index;
-
+            
             return (
               <Card
                 key={index}
@@ -104,26 +94,15 @@ const InsuranceTypes = () => {
               >
                 {/* Gradient Background Overlay */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${type.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`} />
-
-                                    {/* Icon */}
-                    <div className={`absolute z-10 inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br ${type.gradient} shadow-medium opacity-100 m-3 transition-transform duration-100 ${
-                      isHovered ? ' rotate-6' : ''
-                    }`}>
-                      <IconComponent className="w-5 h-5 text-white" />
-                    </div>
-
-                {/* Image */}
-                <div className="w-full h-40 overflow-hidden">
-                  <img
-                    src={type.image}
-                    alt={`${type.title} Image`}
-                    className="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-500"
-                  />
-                </div>
-
-                <CardContent className="relative z-10 mt-8">
+                
+                <CardContent className="p-8 relative z-10">
                   <div className="space-y-6">
-
+                    {/* Icon */}
+                    <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${type.gradient} shadow-medium transition-transform duration-300 ${
+                      isHovered ? 'scale-110 rotate-6' : ''
+                    }`}>
+                      <IconComponent className="w-8 h-8 text-white" />
+                    </div>
 
                     {/* Content */}
                     <div className="space-y-4">
@@ -161,7 +140,6 @@ const InsuranceTypes = () => {
                     </div>
                   </div>
                 </CardContent>
-
               </Card>
             );
           })}

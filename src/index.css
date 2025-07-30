@@ -11,7 +11,7 @@ html {
 
 @media (max-width: 768px) {
   html {
-    font-size: 14px;
+    font-size: 16px;
   }
   h1, .text-6xl, .text-5xl, .text-4xl {
     font-size: 2rem !important;
@@ -45,10 +45,10 @@ html {
 
 @media (max-width: 480px) {
   html {
-    font-size: 13px;
+    font-size: 14px;
   }
   h1, .text-6xl, .text-5xl, .text-4xl {
-    font-size: 1.5rem !important;
+    font-size: 1.8rem !important;
     line-height: 2rem !important;
   }
   h2, .text-3xl {
@@ -56,25 +56,25 @@ html {
     line-height: 1.5rem !important;
   }
   h3, .text-2xl {
-    font-size: 1rem !important;
+    font-size: 1.4rem !important;
     line-height: 1.25rem !important;
   }
   h4, .text-xl {
-    font-size: 0.95rem !important;
-    line-height: 1.1rem !important;
+    font-size: 1.05rem !important;
+    line-height: 1.3rem !important;
   }
   .text-lg {
-    font-size: 0.9rem !important;
+    font-size: 1.2rem !important;
   }
   .text-base, body {
-    font-size: 0.85rem !important;
+    font-size: 1.1rem !important;
   }
   .text-sm {
-    font-size: 0.75rem !important;
+    font-size: .9rem !important;
   }
 
   .text-xs {
-    font-size: 0.7rem !important;
+    font-size: 0.8rem !important;
   }
 }
 
