@@ -46,7 +46,7 @@ const BrandLogoViewer = () => {
         {logos.map((logo, idx) => (
           <div
             key={idx}
-            className="flex-shrink-0 w-[150px] md:w-[250px] h-full flex items-center justify-center p-4 md:p-6 hover:text-gray-900 transition-colors opacity-50 pt-10 hover:opacity-100"
+            className="flex-shrink-0 w-[120px] md:w-[200px] h-full flex items-center justify-center p-2 md:p-4 hover:text-gray-900 transition-colors opacity-50 pt-5 hover:opacity-100"
             onMouseEnter={() => {
               if (sliderRef.current) {
                 sliderRef.current.style.animationPlayState = 'paused';
