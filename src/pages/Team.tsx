@@ -282,11 +282,10 @@ const Team = () => {
     <div className="min-h-screen">
 
        <Helmet>
-  <title>Meet Our Team | Behind The Financial Craft</title>
-  <meta
-    name="description"
-    content="Meet the passionate team driving The Financial Craft. From insurance experts to product specialists, our people are dedicated to simplifying financial protection for every Indian."
-  />
+ <title>Meet Our Team | The Financial Craft</title>
+
+<meta name="description" content="Meet the experts behind The Financial Craft, dedicated to making insurance simple and accessible for every Indian." />
+
   <meta
     name="keywords"
     content="financial craft team, Ajay Kumar founder, insurance experts India, team behind insurance platform, finance startup team, insurance advisors"

@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Heart, Shield, Users, ArrowRight, Play, TrendingUp, Award, CheckCircle } from 'lucide-react';
-import bannerImage from '@/assets/hr_image.png'; // Adjust the path as necessary
+import bannerImage from '@/assets/hpy_faimly.png'; // Adjust the path as necessary
+import ImageSliderInsideFloatingElement from '@/components/HeroImageSlider'; // Import the slider component
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -9,6 +10,8 @@ const HeroSection = () => {
   useEffect(() => {
     setIsVisible(true);
   }, []);
+
+  
 
   const FloatingElement = ({ children, delay = 0, className = "" }: {
     children: React.ReactNode;
@@ -39,16 +42,41 @@ const HeroSection = () => {
         
         {/* Heartbeat Lines */}
         <div className="absolute top-10 left-60 opacity-20">
-          <svg width="200" height="60" viewBox="0 0 100 60" className="text-primary">
+          <svg width="200" height="60" viewBox="0 0 50 60" className="text-primary">
             <path 
               d="M10,30 L40,30 L50,10 L60,50 L70,20 L80,40 L90,30 L190,30" 
               stroke="currentColor" 
-              strokeWidth="2" 
+              strokeWidth=".5" 
               fill="none"
               className="animate-pulse"
             />
+            <path 
+              d="M10,30 L40,30 L50,10 L60,50 L70,20 L80,40 L90,30 L190,30" 
+              stroke="red" 
+              strokeWidth="2" 
+              fill="none"
+              className="animate-draw"
+            />
           </svg>
         </div>
+
+        <style>
+        {`
+          @keyframes draw {
+            0% {
+              stroke-dasharray: 0, 200;
+            }
+            100% {
+              stroke-dasharray: 200, 0;
+            }
+          }
+
+          .animate-draw {
+            animation: draw 2s linear infinite;
+            stroke-dasharray: 200, 0;
+          }
+        `}
+        </style>
       </div>
 
       <div style={{ marginTop: '50px', marginBottom:"150px" }} className="container mx-auto px-6 relative z-10">
@@ -63,15 +91,14 @@ const HeroSection = () => {
                 </span>
               </div>
               
-              <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
-                <span className="block text-foreground">Find the</span>
-                <span className="block text-gradient">Best Health</span>
-                <span className="block text-foreground">Insurance</span>
+              <h1 className="text-1xl lg:text-6xl font-bold leading-tight">
+                <span className="block text-foreground">Best Price</span>
+                <span className="block text-gradient">Insurance Plan</span>
+                <span className="block text-foreground">In India</span>
               </h1>
               
-              <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-                Compare plans from top insurers and save up to 30% on premiums. 
-                Get instant quotes tailored for Indian families.
+              <p className="text-[20px] text-muted-foreground leading-relaxed max-w-lg">
+                Compare health, life, and motor insurance plans from top Indian insurers. Get instant personalized quotes and save up to 30% today.
               </p>
             </div>
 
@@ -98,7 +125,7 @@ const HeroSection = () => {
                 <div className="text-sm text-muted-foreground">Happy Customers</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent">₹5L+</div>
+                <div className="text-3xl font-bold text-accent">₹1Cr+</div>
                 <div className="text-sm text-muted-foreground">Claims Settled</div>
               </div>
             </div>
@@ -110,20 +137,13 @@ const HeroSection = () => {
               {/* Feature Cards */}
 
     {/* Central Interactive Element */}
-              <FloatingElement className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl  shadow-strong hover-lift">
-                <div className="text-center ">
-   <img
-    src={bannerImage} // or "/images/banner.png" if using public folder
-    alt="Insurance claim support illustration"
-    className="w-full h-60 object-contain rounded-xl"
-    />
-                </div>
-              </FloatingElement>
+    
+<ImageSliderInsideFloatingElement />
 
               <div className="grid grid-cols-2 gap-4">
 
                 
-                <FloatingElement className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 shadow-medium hover-lift">
+                <FloatingElement className="bg-card/80 backdrop-blur-sm rounded-2xl p-6">
                   <div className="text-center space-y-3">
                     <div className="w-12 h-12 mx-auto bg-primary/10 rounded-full flex items-center justify-center">
                       <Shield className="w-6 h-6 text-primary" />
@@ -133,7 +153,7 @@ const HeroSection = () => {
                   </div>
                 </FloatingElement>
 
-                <FloatingElement delay={0.2} className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 shadow-medium hover-lift">
+                <FloatingElement delay={0.2} className="bg-card/80 backdrop-blur-sm rounded-2xl p-6">
                   <div className="text-center space-y-3">
                     <div className="w-12 h-12 mx-auto bg-secondary/10 rounded-full flex items-center justify-center">
                       <TrendingUp className="w-6 h-6 text-secondary" />
@@ -143,7 +163,7 @@ const HeroSection = () => {
                   </div>
                 </FloatingElement>
 
-                <FloatingElement delay={0.4} className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 shadow-medium hover-lift">
+                <FloatingElement delay={0.4} className="bg-card/80 backdrop-blur-sm rounded-2xl p-6">
                   <div className="text-center space-y-3">
                     <div className="w-12 h-12 mx-auto bg-accent/10 rounded-full flex items-center justify-center">
                       <Award className="w-6 h-6 text-accent" />
@@ -153,7 +173,7 @@ const HeroSection = () => {
                   </div>
                 </FloatingElement>
 
-                <FloatingElement delay={0.6} className="bg-card/80 backdrop-blur-sm rounded-2xl p-6 shadow-medium hover-lift">
+                <FloatingElement delay={0.6} className="bg-card/80 backdrop-blur-sm  medium-shadow rounded-2xl p-6">
                   <div className="text-center space-y-3">
                     <div className="w-12 h-12 mx-auto bg-green-500/10 rounded-full flex items-center justify-center">
                       <CheckCircle className="w-6 h-6 text-green-500" />

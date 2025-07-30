@@ -147,11 +147,10 @@ const Companies = () => {
        
       {/* ✅ SEO Helmet Tags for Companies Page */}
     <Helmet>
-  <title>Top Insurance Companies in India | Compare Plans | The Financial Craft</title>
-  <meta
-    name="description"
-    content="Discover India’s top insurance companies including Care Health, Niva Bupa, Star Health, ICICI Lombard & more. Compare features, ratings, claim support, and policies all in one place at The Financial Craft."
-  />
+   <title>Top Insurers in India | The Financial Craft</title>
+
+<meta name="description" content="Compare top insurers in India like Star, Niva Bupa, ICICI & Care. Ratings, claim support & features — all at The Financial Craft." />
+
   <meta
     name="keywords"
     content="insurance companies India, compare insurance providers, Niva Bupa, Care Health Insurance, Star Health, ICICI Lombard, top insurers India, claim ratio, insurance partners"

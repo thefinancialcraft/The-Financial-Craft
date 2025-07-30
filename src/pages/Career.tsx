@@ -113,11 +113,10 @@ const Career = () => {
     <div className="min-h-screen">
        
        <Helmet>
-  <title>Careers at The Financial Craft | Join Our Mission</title>
-  <meta
-    name="description"
-    content="Be part of India’s fastest-growing insurance comparison platform. Join The Financial Craft and help shape the future of financial literacy, customer trust, and tech innovation in insurance."
-  />
+<title>Careers | Join The Financial Craft Team</title>
+
+<meta name="description" content="Join The Financial Craft, India’s growing insurance platform. Drive innovation, trust & financial literacy. Build your career with us." />
+
   <meta
     name="keywords"
     content="insurance jobs India, careers financial craft, work with insurance startup, remote finance jobs, customer support insurance, hiring insurance industry"

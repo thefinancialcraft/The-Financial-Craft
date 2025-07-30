@@ -10,10 +10,10 @@ const Layout = () => {
     <>
           <Helmet>
   {/* ✅ SEO Title & Updated Description */}
-  <title>The Financial Craft | Compare Health, Life, Term & Car Insurance Plans in India </title>
+  <title>The Financial Craft | Insurance Made Easy </title>
   <meta
     name="description"
-    content="Compare Health, Life, and Motor Insurance Plans — Get Free Quotes from Top Insurers. Buy Policies Online Instantly with Expert Assistance from The Financial Craft. Your Trusted Partner for Term Insurance, Health Coverage, Car Insurance, Tax-Saving Plans, Investment Solutions & More."
+    content="Get free quotes & discounts on Health, Life & Car Insurance. Compare & buy online instantly with The Financial Craft – your trusted insurance partner"
   />
   <meta
     name="keywords"

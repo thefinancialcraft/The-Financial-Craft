@@ -132,11 +132,9 @@ const Services = () => {
   return (
     <div className="min-h-screen">
 <Helmet>
-  <title>Insurance Services | Health, Life, Term & Motor Plans | The Financial Craft</title>
-  <meta
-    name="description"
-    content="Explore expert-guided insurance services for health, life, motor, and term plans. Compare policies, get free quotes, and buy online from trusted Indian insurers with The Financial Craft."
-  />
+  <title>Insurance Services | Health, Life & Motor Plans</title>
+<meta name="description" content="Compare and buy health, life, motor & term insurance online. Get free quotes & expert help from trusted Indian insurers at The Financial Craft." />
+
   <meta
     name="keywords"
     content="insurance services India, health insurance plans, motor insurance, term insurance, life insurance, insurance comparison, expert advice, financial services"

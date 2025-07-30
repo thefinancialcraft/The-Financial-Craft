@@ -48,11 +48,10 @@ const About = () => {
   return (
     <div className="min-h-screen">
      <Helmet>
-  <title>About Us | Ajay Kumar, The Financial Craft (Founded 2021)</title>
-  <meta
-    name="description"
-    content="Founded by Ajay Kumar in 2021, The Financial Craft is a digital-first insurance comparison platform helping Indians make informed decisions. Learn about our values, story, and commitment to simplifying insurance."
-  />
+ <title>About Us | The Financial Craft by Ajay Kumar</title>
+
+<meta name="description" content="Founded by Ajay Kumar, The Financial Craft helps Indians compare & buy insurance easily. Discover our mission, story & values." />
+
   <meta
     name="keywords"
     content="who is ceo of the financial craft, about financial craft, about us, Ajay Kumar, insurance startup India, insurance platform, insurance founders, insurance guide India, customer-first insurance"

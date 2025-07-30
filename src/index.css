@@ -86,6 +86,16 @@ html {
 All colors MUST be HSL.
 */
 
+/* Hide scrollbar cross-browser */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
 @layer base {
   :root {
     --background: 210 40% 98%;
