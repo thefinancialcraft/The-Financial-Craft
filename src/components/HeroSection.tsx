@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Heart, Shield, Users, ArrowRight, Play, TrendingUp, Award, CheckCircle } from 'lucide-react';
+import bannerImage from '@/assets/hr_image.png'; // Adjust the path as necessary
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -109,21 +110,13 @@ const HeroSection = () => {
               {/* Feature Cards */}
 
     {/* Central Interactive Element */}
-              <FloatingElement className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl p-8 shadow-strong hover-lift">
-                <div className="text-center space-y-4">
-                  <div className="text-6xl font-bold text-gradient">₹10,000+</div>
-                  <div className="text-lg font-medium">Average Savings Per Family</div>
-                  <div className="text-sm text-muted-foreground">Compare & Save with Smart Choices</div>
-                  <div className="flex justify-center space-x-4 pt-4">
-                    <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-                      <span className="text-xs">Live Comparison</span>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
-                      <span className="text-xs">Real-time Quotes</span>
-                    </div>
-                  </div>
+              <FloatingElement className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl  shadow-strong hover-lift">
+                <div className="text-center ">
+   <img
+    src={bannerImage} // or "/images/banner.png" if using public folder
+    alt="Insurance claim support illustration"
+    className="w-full h-60 object-contain rounded-xl"
+    />
                 </div>
               </FloatingElement>
 
